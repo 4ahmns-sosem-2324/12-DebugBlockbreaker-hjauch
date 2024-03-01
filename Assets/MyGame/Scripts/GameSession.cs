@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class GameSession{
+public class GameSession
+{
 
     //config parameters
     [Range(0.1f, 10f)] public float gameSpeed = 1f;
