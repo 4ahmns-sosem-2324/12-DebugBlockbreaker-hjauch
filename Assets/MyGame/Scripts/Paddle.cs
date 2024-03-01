@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+namespace thegamestation { };
 
-public class Paddle : MonoBehaviour {
+public class Paddle : MonoBehaviour
+{
 
     //configruation parameters
     public float minX = 1f;
@@ -13,22 +15,22 @@ public class Paddle : MonoBehaviour {
     GameSession theGameSession;
     Ball theBall;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
         theGameSession = FindObjectOfType<GameSession>();
         theBall = FindObjectOfType<Ball>();
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         Vector2 paddlePos = new Vector2(transform.position.x, transform.position.y);
         paddlePos.x = Mathf.Clamp(GetXPosition(), minX, maxX);
         transform.position = paddlePos;
-	}
+    }
 
-    private float GetXPosition
+    private float GetXPosition()
     {
         if (theGameSession.IsAutoPlayEnabled())
         {
