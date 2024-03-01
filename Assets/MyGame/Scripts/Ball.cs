@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 
-public class Ball : MonoBehaviour {
+public class Ball : MonoBehaviour 
+{
 
     // config parameters
     public Paddle paddle1;
