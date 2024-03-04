@@ -34,6 +34,13 @@ public class SceneLoader : MonoBehaviour {
 
     public bool IsLastPlayScene()
     {
-        return SceneManager.GetActiveScene() == LEVEL5;
+        if (SceneManager.GetActiveScene().name == LEVEL5)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
