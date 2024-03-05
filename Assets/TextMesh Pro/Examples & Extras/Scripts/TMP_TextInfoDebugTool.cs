@@ -33,7 +33,7 @@ namespace TMPro.Examples
                 m_Transform = gameObject.GetComponent<Transform>();
         }
 
-
+        [System.Obsolete]
         void OnDrawGizmos()
         {
             // Update Text Statistics
