@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level : MonoBehaviour {
+public class Level : MonoBehaviour 
+{
 
     // parameters
     [SerializeField] int breakableBlocks; //Serialized for debugging purposes

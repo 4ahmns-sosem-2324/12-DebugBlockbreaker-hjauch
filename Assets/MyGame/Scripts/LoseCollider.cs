@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LoseCollider : MonoBehaviour {
+public class LoseCollider : MonoBehaviour 
+
+{
     public GameObject loader;
     private SceneLoader sceneLoader;
 
